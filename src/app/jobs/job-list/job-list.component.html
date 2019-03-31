@@ -1,0 +1,54 @@
+<section class="content">
+    <section class="block">
+        <div class="container">
+            <!--============ Section Title===================================================================-->
+            <div class="section-title clearfix">
+                <div class="float-xl-left float-md-left float-sm-none">
+                    <h2>Active Job Listings</h2>
+                </div>
+            </div>
+            <!--============ Items ==========================================================================-->
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover" style="text-align: left">
+                  <thead class="thead-light">
+                  <tr>
+                    <th>View</th>
+                    <th>Thumbnail</th>
+                    <th>Title</th>
+                    <th>City</th>
+                    <th>Zip Code</th>
+                    <th>State</th>
+                    <th>Is_Awarded</th>
+                    <th>End Date</th>
+                    <th>Created At</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr *ngFor="let job of jobs | async">
+                    <td>
+                      <div class="btn-group">
+                        <button routerLink="/jobs/detail/{{job.id}}" class="btn btn-info">
+                          <i class="fas fa-info"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td><img *ngIf="job.thumbnail" src="{{job.thumbnail}}" alt="{{job.title}}" width="80px" /></td>
+                    <td>{{job.title}}</td>
+                    <td>{{job.city}}</td>
+                    <td>{{job.zip_code}}</td>
+                    <td>{{job.state}}</td>
+                    <td>{{job.is_awarded}}</td>
+                    <td>{{job.end_date| date : 'yyyy-mm-dd' }}</td>
+                    <td>{{job.created_at | date : 'yyyy-mm-dd'}}</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            <!--end item-->
+  
+            <!--============ End Items ======================================================================-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end block-->
+</section>

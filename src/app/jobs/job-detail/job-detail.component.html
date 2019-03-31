@@ -1,0 +1,49 @@
+<div *ngIf="job | async; let job;">
+  <h2>{{title}}</h2>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <img *ngIf="job.thumbnail" src="{{job.thumbnail}}" alt="{{job.title}}" width="300px" height="300px"/>
+      <img *ngIf="!job.thumbnail" src="assets/images/not-available.png" width="130px" height="100px"/>
+    </div>
+    <div class="col-sm-9">
+      <div class="row">
+        <label class="col-sm-2">Title:</label>
+        <div class="col-sm-9">{{job.title}}</div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2">City: </label>
+        <div class="col-sm-9">{{job.city}}</div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2">Zip Code: </label>
+        <div class="col-sm-9">{{job.zip_code}}</div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2">State: </label>
+        <div class="col-sm-9">{{job.state}}</div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2">Is Awarded: </label>
+        <div class="col-sm-9">{{job.is_awarded}}</div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2">End Date: </label>
+        <div class="col-sm-9">{{job.end_date | date : 'yyyy-mm-dd'}}</div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2">Created At: </label>
+        <div class="col-sm-9">{{job.created_at | date : 'yyyy-mm-dd'}}</div>
+      </div>
+      <div class="row">
+        <label class="col-sm-2">Description: </label>
+        <div class="col-sm-9">{{job.description}}</div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-dark" routerLink="/jobs">
+          <i class="fa fa-arrow-left"></i> Back
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
