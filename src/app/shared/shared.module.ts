@@ -11,9 +11,8 @@ import {PageNotFoundComponent} from './not-found/not-found.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {StoreModule} from '@ngrx/store';
 import {EffectsModule} from '@ngrx/effects';
-import {ExtractNamesPipe} from './extract-names.pipe';
-import { AppInMemoryApi } from '../app.in-memory.api';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import {AppInMemoryApi} from '../app.in-memory.api';
+import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 
 @NgModule({
   imports: [
@@ -27,8 +26,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
     EffectsModule
   ],
   declarations: [
-    PageNotFoundComponent,
-    ExtractNamesPipe
+    PageNotFoundComponent
   ],
   providers: [],
   exports: [
@@ -39,8 +37,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
     RouterModule,
     StoreModule,
     EffectsModule,
-    PageNotFoundComponent,
-    ExtractNamesPipe
+    PageNotFoundComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
