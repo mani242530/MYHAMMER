@@ -8,7 +8,7 @@ To start using the application follow the next steps:
 ## Get the Code
 ```
 git clone https://github.com/mani242530/MYHAMMER.git
-cd myhammer-started
+cd MYHAMMER
 npm i
 or
 npm install
