@@ -7,7 +7,7 @@ To start using the application follow the next steps:
 
 ## Get the Code
 ```
-git clone https://github.com/yduartep/angular-ngrx-crud.git
+git clone https://github.com/mani242530/MYHAMMER.git
 cd myhammer-started
 npm i
 or
@@ -19,7 +19,7 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Architecture
 
-## How to GET a list of jobs using Ngrx:
+## How to GET a list of all jobs:
 1. To get a list of jobs, the system **dispatch** an event with the action **"GET_JOBS"**.
 2. The **reducer** related to the module **jobs** is executed and listed of jobs.
 3. An **“ngrx effect”** class is implemented (JobEffects) by module and will be triggered when we dispatch actions with the store.
@@ -31,8 +31,8 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
 - In the module class (jobs.module.ts) are imported the reducers to be called by each feature using the class **StoreModule** and also the **EffectsModule**.
 
 ## Functionalities
-1. when application is loaded, It will display list of all jobs.
-2. click `view on icon` to navigate to job detail page.
+1. When application is loaded, It will display list of all jobs.
+2. Click `view on icon` to navigate to job detail page.
 3. In job detail page, It will display description of job.
 
 ```
