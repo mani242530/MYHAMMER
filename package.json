@@ -1,8 +1,8 @@
 {
-  "name": "myhammer-started",
+  "name": "MYHAMMER",
   "version": "1.0.0",
   "license": "MIT",
-  "description": "project demo using angular and ngrx",
+  "description": "Application uisng Angular",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
