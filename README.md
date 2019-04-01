@@ -31,8 +31,8 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
 - In the module class (jobs.module.ts) are imported the reducers to be called by each feature using the class **StoreModule** and also the **EffectsModule**.
 
 ## Functionalities
-1. When application is loaded, It will display list of all jobs.
-2. Click `view on icon` to navigate to job detail page.
+1. When application is loaded, It will display list of jobs.
+2. Click on `view icon` to navigate to job detail page.
 3. In job detail page, It will display description of job.
 
 ```
