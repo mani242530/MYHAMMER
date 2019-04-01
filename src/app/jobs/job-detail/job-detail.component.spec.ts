@@ -1,7 +1,6 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {JobDetailComponent} from './job-detail.component';
-import {ExtractNamesPipe} from '../../shared/extract-names.pipe';
 import {Router, RouterModule} from '@angular/router';
 import {APP_BASE_HREF, CommonModule} from '@angular/common';
 import {JobsService} from '../shared/jobs.service';
