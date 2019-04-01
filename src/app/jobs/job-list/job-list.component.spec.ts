@@ -27,8 +27,7 @@ describe('JobListComponent', () => {
         EffectsModule
       ],
       declarations: [
-        JobListComponent,
-        ExtractNamesPipe
+        JobListComponent
       ],
       providers: [
         JobsService,
