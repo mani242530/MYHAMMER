@@ -8,7 +8,6 @@ import {Store, StoreModule} from '@ngrx/store';
 import {RouterModule} from '@angular/router';
 import {EffectsModule} from '@ngrx/effects';
 import {JobsService} from '../shared/jobs.service';
-import {ExtractNamesPipe} from '../../shared/extract-names.pipe';
 import {MockStore} from '../store/mock-store';
 
 describe('JobListComponent', () => {
