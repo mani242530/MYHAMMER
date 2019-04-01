@@ -33,8 +33,7 @@ describe('JobDetailComponent', () => {
         EffectsModule.forRoot([])
       ],
       declarations: [
-        JobDetailComponent,
-        ExtractNamesPipe
+        JobDetailComponent
       ],
       providers: [
         JobsService,
